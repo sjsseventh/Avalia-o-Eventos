@@ -1,0 +1,11 @@
+D:\Teste Cedro\Eventos\RegrasDeNegocio\bin\Debug\netcoreapp2.0\RegrasDeNegocio.deps.json
+D:\Teste Cedro\Eventos\RegrasDeNegocio\bin\Debug\netcoreapp2.0\RegrasDeNegocio.dll
+D:\Teste Cedro\Eventos\RegrasDeNegocio\bin\Debug\netcoreapp2.0\RegrasDeNegocio.pdb
+D:\Teste Cedro\Eventos\RegrasDeNegocio\bin\Debug\netcoreapp2.0\Evento.AcessoADados.dll
+D:\Teste Cedro\Eventos\RegrasDeNegocio\bin\Debug\netcoreapp2.0\Evento.AcessoADados.pdb
+D:\Teste Cedro\Eventos\RegrasDeNegocio\obj\Debug\netcoreapp2.0\RegrasDeNegocio.csprojResolveAssemblyReference.cache
+D:\Teste Cedro\Eventos\RegrasDeNegocio\obj\Debug\netcoreapp2.0\RegrasDeNegocio.csproj.CoreCompileInputs.cache
+D:\Teste Cedro\Eventos\RegrasDeNegocio\obj\Debug\netcoreapp2.0\RegrasDeNegocio.AssemblyInfoInputs.cache
+D:\Teste Cedro\Eventos\RegrasDeNegocio\obj\Debug\netcoreapp2.0\RegrasDeNegocio.AssemblyInfo.cs
+D:\Teste Cedro\Eventos\RegrasDeNegocio\obj\Debug\netcoreapp2.0\RegrasDeNegocio.dll
+D:\Teste Cedro\Eventos\RegrasDeNegocio\obj\Debug\netcoreapp2.0\RegrasDeNegocio.pdb

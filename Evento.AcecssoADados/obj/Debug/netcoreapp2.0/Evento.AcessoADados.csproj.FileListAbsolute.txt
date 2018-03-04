@@ -1,0 +1,11 @@
+D:\Teste Cedro\Eventos\Evento.AcecssoADados\obj\Debug\netcoreapp2.0\Evento.AcessoADados.csproj.CoreCompileInputs.cache
+D:\Teste Cedro\Eventos\Evento.AcecssoADados\obj\Debug\netcoreapp2.0\Evento.AcessoADados.AssemblyInfoInputs.cache
+D:\Teste Cedro\Eventos\Evento.AcecssoADados\obj\Debug\netcoreapp2.0\Evento.AcessoADados.AssemblyInfo.cs
+D:\Teste Cedro\Eventos\Evento.AcecssoADados\bin\Debug\netcoreapp2.0\Evento.AcessoADados.deps.json
+D:\Teste Cedro\Eventos\Evento.AcecssoADados\bin\Debug\netcoreapp2.0\Evento.AcessoADados.dll
+D:\Teste Cedro\Eventos\Evento.AcecssoADados\obj\Debug\netcoreapp2.0\Evento.AcessoADados.csprojResolveAssemblyReference.cache
+D:\Teste Cedro\Eventos\Evento.AcecssoADados\bin\Debug\netcoreapp2.0\Evento.AcessoADados.pdb
+D:\Teste Cedro\Eventos\Evento.AcecssoADados\obj\Debug\netcoreapp2.0\Evento.AcessoADados.dll
+D:\Teste Cedro\Eventos\Evento.AcecssoADados\obj\Debug\netcoreapp2.0\Evento.AcessoADados.pdb
+D:\Teste Cedro\Eventos\Evento.AcecssoADados\bin\Debug\netcoreapp2.0\Evento.AcessoADados.runtimeconfig.json
+D:\Teste Cedro\Eventos\Evento.AcecssoADados\bin\Debug\netcoreapp2.0\Evento.AcessoADados.runtimeconfig.dev.json
