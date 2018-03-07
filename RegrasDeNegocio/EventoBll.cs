@@ -9,13 +9,11 @@ namespace RegrasDeNegocio
 {
     public class EventoBll
     {
-
         public void Inserir(EventoModelView eventoModelView)
         {
             var evento = new Event();
-            evento = PrepararEvento(eventoModelView, evento);
             var _eventoDAO = new EventoDAO();
-
+            evento = PrepararEvento(eventoModelView, evento);
             _eventoDAO.Inserir(evento);
         }
 
@@ -23,7 +21,6 @@ namespace RegrasDeNegocio
         {
             var _eventoDAO = new EventoDAO();
             var evento = _eventoDAO.ObterPorId(idEvento);
-
             evento = PrepararEvento(eventoModelView, evento);
             _eventoDAO.Atualizar(evento);
         }
@@ -34,10 +31,10 @@ namespace RegrasDeNegocio
             return _eventoDAO.ObterPorId(idEvento);
         }
 
-        public void Deletar(int id)
+        public void Deletar(int idEvento)
         {
             var _eventoDAO = new EventoDAO();
-            _eventoDAO.Deletar(id);
+            _eventoDAO.Deletar(idEvento);
         }
 
         public Event PrepararEvento(EventoModelView eventoModelView, Event evento)

@@ -8,14 +8,13 @@ using Evento.AcessoADados.ModelView;
 
 namespace RegrasDeNegocio
 {
-    public class ParticipanteBll : EventoBll
+    public class ParticipanteBll
     {
         public void Inserir(ParticipanteModelView participanteModelView)
         {
             var participante = new Participante();
-            participante = RetornaParticipante(participanteModelView, participante);
             var _participanteDAO = new ParticipanteDAO();
-
+            participante = RetornaParticipante(participanteModelView, participante);
             _participanteDAO.Inserir(participante);
         }
 
@@ -23,11 +22,23 @@ namespace RegrasDeNegocio
         public Participante RetornaParticipante(ParticipanteModelView participanteModelView, Participante participante)
         {
             var evento = new Event();
+            var _participanteDAO = new ParticipanteDAO();
             participante.Email = participanteModelView.Email;
             participante.Nome = participanteModelView.Nome;
             participante.IdEvento = participanteModelView.IdEvento;
-            var _participanteDAO = new ParticipanteDAO();
-            return participante;
+            var nMaxIngressos = _participanteDAO.ObterNIngressosMax(participante.IdEvento);
+            var nIngressosVendidos = _participanteDAO.ObterNIngressosVendidos(participante.IdEvento);
+
+            if (nMaxIngressos == nIngressosVendidos)
+            {
+                participante = null;
+                return participante;
+            }
+
+            else
+            {
+                return participante;
+            }
         }
 
         public Participante ObterPorId(int idParticipante)
