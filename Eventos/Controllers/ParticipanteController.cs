@@ -56,7 +56,6 @@ namespace Eventos.Controllers
             }
             catch (Exception e)
             {
-                Console.WriteLine("ok teste");
                 return StatusCode(500);
             }
         }
@@ -68,6 +67,22 @@ namespace Eventos.Controllers
             {
                 var _participanteBll = new ParticipanteBll();
                 _participanteBll.Atualizar(idParticipante, participanteModelView);
+                return NoContent();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return StatusCode(500);
+            }
+        }
+
+        [HttpDelete("{idParticipante}")]
+        public IActionResult Delete(int idParticipante)
+        {
+            try
+            {
+                var _participanteBll = new ParticipanteBll();
+                _participanteBll.Deletar(idParticipante);
                 return NoContent();
             }
             catch (Exception e)

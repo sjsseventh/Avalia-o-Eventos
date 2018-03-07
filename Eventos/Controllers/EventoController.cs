@@ -80,5 +80,21 @@ namespace Eventos.Controllers
                 return StatusCode(500);
             }
         }
+
+        [HttpDelete("{idEvento}")]
+        public IActionResult Delete(int idEvento)
+        {
+            try
+            {
+                var _eventoBll = new EventoBll();
+                _eventoBll.Deletar(idEvento);
+                return NoContent();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return StatusCode(500);
+            }
+        }
     }
 }
