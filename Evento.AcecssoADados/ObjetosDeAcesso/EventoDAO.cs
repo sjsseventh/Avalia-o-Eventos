@@ -26,11 +26,11 @@ namespace Evento.AcessoADados.ObjetosDeAcesso
             }
         }
 
-        public void Deletar(int id)
+        public void Deletar(int idEvento)
         {
             using (var _bancoDeDados = new BancoDeDados())
             {
-                var evento = ObterPorId(id);
+                var evento = ObterPorId(idEvento);
                 _bancoDeDados.Eventos.Remove(evento);
                 _bancoDeDados.SaveChanges();
             }

@@ -53,5 +53,21 @@ namespace Evento.AcessoADados.ObjetosDeAcesso
                 return _bancoDeDados.Participantes.ToList();
             }
         }
+
+        public int ObterNIngressosMax(int idEvento)
+        {
+            using (var _bancoDeDados = new BancoDeDados())
+            {
+                return _bancoDeDados.Eventos.FirstOrDefault(x => x.IdEvento == idEvento).NMaximoIngressos;
+            }
+        }
+
+        public int ObterNIngressosVendidos(int idEvento)
+        {
+            using (var _bancoDeDados = new BancoDeDados())
+            {
+                return _bancoDeDados.Participantes.Where(x => x.IdEvento == idEvento).Count();
+            }
+        }
     }
 }
